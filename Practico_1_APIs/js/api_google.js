@@ -13,17 +13,14 @@
 		});
 		
 		$("#btnBuscarUbicacion").click(function(){
-		console.log("s");
 			var geocoder = new google.maps.Geocoder();
 			var ubicacionTexto = $("#txtUbicacion").val().trim();
 			if(ubicacionTexto.length > 0){
 				geocoder.geocode({'address': ubicacionTexto}, function(results, status) {
-					console.log(status);
 					if (status == google.maps.GeocoderStatus.OK) {
-						console.log(results);
 						marcar(new google.maps.LatLng(results[0].geometry.location.k, results[0].geometry.location.D));
 					} else {
-						console.log("Problemas al tratar de buscar la dirección...");
+						//console.log("Problemas al tratar de buscar la dirección...");
 					}
 				});
 			}

@@ -1,7 +1,41 @@
 <html>
 	<head>
-		<title>Practicos de APIs</title>
+		<title>Practicos de APIs - Grupo 6</title>
+		<!-- CSS -->
+		<link href="css/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+		<link href="css/estilos.css" type="text/css" rel="stylesheet"/>
+		<!-- JS -->
+		<script type="text/javascript" src="js/lib/jquery.js"></script>
+		<script type="text/javascript" src="css/bootstrap/js/bootstrap.min..js"></script>
+		<script type="text/javascript" src="js/api_google.js"></script>
+		<!-- Google Maps API -->
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
 	</head>
 	<body>
+		<div class="container">
+			<div class="row" style="padding-top:10px">
+				<div class="col-sm-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Uso de Google Maps
+						</div>
+						<div class="panel-body">
+							<div class="form-inline">
+								<div class="form-group">
+									<label>Ubicación</label>
+									<input type="text" class="form-control" id="txtUbicacion" placeholder="Escribe aquí un sitio a buscar">
+								</div>
+								<div class="form-group">
+									<input type="button" class="btn btn-default" id="btnBuscarUbicacion" value="Buscar">
+								</div>
+							</div>
+							<div id="contenedorMapa"></div>	
+						</div>
+						<div class="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

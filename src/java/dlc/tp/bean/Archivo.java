@@ -24,6 +24,7 @@ public class Archivo {
 
     public ArrayList<Palabra> getPalabras() {
         return palabras;
+        //asda
     }
 
     public void setPalabras(ArrayList<Palabra> palabras) {
